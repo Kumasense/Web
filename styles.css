@@ -1,0 +1,17 @@
+/* ตั้งค่าสำหรับพื้นหลัง */
+body {
+    background-color: black; /* พื้นหลังสีดำ */
+    height: 100vh; /* ให้พื้นที่ครอบคลุมเต็มหน้าจอ */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* จัดตำแหน่งข้อความกลางจอ */
+    align-items: center; /* จัดตำแหน่งข้อความกลางแนวตั้ง */
+}
+
+/* รูปแบบข้อความ */
+.message {
+    color: white; /* ข้อความสีขาว */
+    font-size: 24px; /* ขนาดตัวอักษร */
+    font-family: Arial, sans-serif; /* ฟอนต์ */
+    text-align: center; /* จัดข้อความกลาง */
+}
