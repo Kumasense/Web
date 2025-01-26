@@ -1,14 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>HEART1</title>
   <link rel="stylesheet" href="./style.css">
+  <style>
+    /* CSS สำหรับให้ canvas เต็มหน้าจอ */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* ป้องกันไม่ให้มีการเลื่อนหน้าจอ */
+    }
 
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000; /* สีพื้นหลัง (สามารถปรับได้) */
+    }
+
+    /* ซ่อน iframe ที่ฝังวิดีโอ */
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      pointer-events: none; /* ป้องกันไม่ให้ผู้ใช้คลิกที่วิดีโอ */
+      z-index: -1; /* วาง iframe ไว้ด้านหลัง canvas */
+    }
+  </style>
 </head>
 <body>
-<canvas id="heart"></canvas>
-  <script  src="./script.js"></script>
+  <canvas id="heart"></canvas>
 
+  <!-- ฝังวิดีโอ YouTube โดยไม่แสดง UI -->
+  <iframe src="https://www.youtube.com/embed/eYBw6Cl4ico?autoplay=1&loop=1&playlist=eYBw6Cl4ico" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+
+  <script src="./script.js"></script>
 </body>
 </html>
