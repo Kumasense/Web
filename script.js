@@ -60,7 +60,7 @@ var init = function () {
 
     var rand = Math.random;
 
-    ctx.fillStyle = "rgba(0,0,0,1)";
+    ctx.fillStyle = "rgba(1,1,1,1)";
 
     ctx.fillRect(0, 0, width, height);
 
@@ -188,7 +188,7 @@ var init = function () {
 
         time += ((Math.sin(time)) < 0 ? 9 : (n > 0.8) ? .2 : 1) * config.timeDelta;
 
-        ctx.fillStyle = "rgba(0,0,0,.1)";
+        ctx.fillStyle = "rgba(1,1,1,1)";
 
         ctx.fillRect(0, 0, width, height);
 
