@@ -88,7 +88,7 @@ var init = function () {
 
         height = canvas.height = koef * innerHeight;
 
-        ctx.fillStyle = "rgba(0,0,0,1)";
+        ctx.fillStyle = "rgba(1,1,1,1)";
 
         ctx.fillRect(0, 0, width, height);
 
